@@ -688,11 +688,8 @@
 
       // รวบรวมข้อมูลเด็กเล็ก / ผู้สูงอายุ
       const specialNeedsList = [];
-      if (highChairCheck.checked) {
-        specialNeedsList.push(`มีเด็กเล็ก (High Chair ${highChairCount.value} ตัว)`);
-      }
-      if (document.getElementById('wheelchairCheck').checked) {
-        specialNeedsList.push('มีผู้สูงอายุ / ผู้ใช้รถเข็น (ต้องการพื้นที่ Wheelchair)');
+      if (highChairCheck && highChairCheck.checked) {
+      specialNeedsList.push(`มีเด็กเล็ก (High Chair ${highChairCount.value} ตัว)`);
       }
 
       const payload = {
