@@ -635,7 +635,7 @@
     // =========================================================================
     // นำ Web App URL ที่ได้จากการ Deploy Google Apps Script มาวางในเครื่องหมายคำพูดด้านล่าง
     // =========================================================================
-    const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyWQVvt_k4Zir76fxr4pKmBIE4d2Tei6gzjHyc4rEeCkOW4JV0GMxlTB15eyhie6gCj/exec";
+    const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyPTIF_ooxPf_VD1okECPijku02g3Wt4_n7IS3PMshn8_5mz321Sxzkni5g4M2EIyuL/exec";
 
     // การเปิด-ปิดส่วนจำนวนผู้ติดตามตามสถานะการมาร่วมงาน
     const attendYes = document.getElementById('attendYes');
@@ -716,7 +716,7 @@
       statusMessage.style.display = 'none';
 
       try {
-        if (GOOGLE_SCRIPT_URL === "https://script.google.com/macros/s/AKfycbxUUPsq4qmljBZdTd1YnnzXOC1fPiBXOg21swN7_rkwPu-_g4sKcpvhbxDZwte-SZ8r/exec") {
+        if (GOOGLE_SCRIPT_URL === "YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE") {
           await new Promise(resolve => setTimeout(resolve, 900));
           console.log("ข้อมูลที่เตรียมส่งเข้า Google Sheet:", payload);
         } else {
