@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wedding RSVP - Suphattra & Nithit (Nay & Earn)</title>
-  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Dancing+Script:wght@600;700&family=Mali:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>Wedding RSVP - Nay & Earn</title>
+  <link href="https://fonts.googleapis.com/css2?family=Mali:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
       --sage-light: #ccd5cc;
@@ -22,10 +22,10 @@
       box-sizing: border-box;
       margin: 0;
       padding: 0;
+      font-family: 'Mali', cursive, sans-serif;
     }
 
     body {
-      font-family: 'Mali', cursive, sans-serif;
       color: var(--text-dark);
       min-height: 100vh;
       padding: 30px 15px;
@@ -94,9 +94,9 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 15px;
+      gap: 20px;
       flex-wrap: wrap;
-      margin: 10px 0;
+      margin: 12px 0;
     }
 
     .person-block {
@@ -104,37 +104,22 @@
     }
 
     .person-name {
-      font-family: 'Dancing Script', cursive;
-      font-size: 2.3rem;
+      font-size: 2.2rem;
       font-weight: 700;
       color: var(--berry-red);
-      line-height: 1.1;
-    }
-
-    .person-surname {
-      font-family: 'Dancing Script', cursive;
-      font-size: 1.55rem;
-      color: var(--berry-red);
-      margin-top: 2px;
-    }
-
-    .person-nickname {
-      font-family: 'Caveat', cursive;
-      font-size: 1.5rem;
-      color: var(--berry-red);
-      margin-top: 2px;
+      line-height: 1.2;
     }
 
     .birds-icon {
-      font-size: 2rem;
+      font-size: 1.8rem;
       color: var(--forest-green);
       padding: 0 5px;
     }
 
     .invite-line {
-      font-size: 1.1rem;
+      font-size: 1.05rem;
       color: var(--forest-green);
-      margin: 14px 0 14px;
+      margin: 14px 0 16px;
       font-weight: 600;
     }
 
@@ -143,25 +128,28 @@
       background: rgba(255, 252, 249, 0.65);
       border: 2px solid var(--cream-border);
       border-radius: 22px;
-      padding: 14px 20px;
+      padding: 16px 20px;
       margin: 0 auto 20px;
       max-width: 480px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
     }
 
-    .event-date {
-      font-size: 1.12rem;
+    .event-date-th {
+      font-size: 1.1rem;
       font-weight: 700;
       color: var(--berry-red);
-      margin-bottom: 6px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 8px;
+      margin-bottom: 2px;
+    }
+
+    .event-date-en {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--berry-red);
+      margin-bottom: 8px;
     }
 
     .event-venue {
-      font-size: 0.96rem;
+      font-size: 0.95rem;
       font-weight: 600;
       color: var(--forest-green);
       display: flex;
@@ -173,11 +161,11 @@
 
     .map-link {
       display: inline-block;
-      margin-top: 8px;
+      margin-top: 10px;
       font-size: 0.84rem;
       color: var(--berry-red);
       background-color: var(--cream-border);
-      padding: 4px 14px;
+      padding: 5px 14px;
       border-radius: 15px;
       text-decoration: none;
       font-weight: 600;
@@ -196,8 +184,7 @@
       background-color: var(--cream-border);
       padding: 6px 32px;
       border-radius: 8px;
-      font-family: 'Dancing Script', cursive;
-      font-size: 1.6rem;
+      font-size: 1.3rem;
       font-weight: 700;
       color: var(--forest-green);
       box-shadow: 0 3px 6px rgba(0,0,0,0.06);
@@ -228,10 +215,10 @@
     }
 
     .dress-code-title {
-      font-family: 'Dancing Script', cursive;
-      font-size: 1.65rem;
+      font-size: 1.25rem;
+      font-weight: 700;
       color: var(--forest-green);
-      margin-bottom: 8px;
+      margin-bottom: 10px;
     }
 
     .color-dots {
@@ -246,6 +233,14 @@
       border-radius: 50%;
       border: 2px solid rgba(255,255,255,0.7);
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .hashtag-box {
+      margin-top: 14px;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--berry-red);
+      letter-spacing: 0.5px;
     }
 
     hr.divider {
@@ -265,15 +260,25 @@
     }
 
     .section-title {
-      font-size: 1.15rem;
+      font-size: 1.12rem;
       font-weight: 700;
       color: var(--berry-red);
-      margin-bottom: 16px;
+      margin-bottom: 14px;
       display: flex;
       align-items: center;
       gap: 8px;
       border-bottom: 1.5px solid rgba(139, 34, 82, 0.15);
       padding-bottom: 8px;
+    }
+
+    .section-note {
+      font-size: 0.86rem;
+      color: var(--berry-red);
+      background: rgba(139, 34, 82, 0.08);
+      padding: 8px 12px;
+      border-radius: 12px;
+      margin-bottom: 14px;
+      font-weight: 500;
     }
 
     .form-group {
@@ -320,7 +325,6 @@
       border: 1.5px solid #cbbeb5;
       border-radius: 14px;
       background-color: var(--white-soft);
-      font-family: 'Mali', cursive, sans-serif;
       font-size: 0.95rem;
       color: var(--text-dark);
       transition: border-color 0.2s, box-shadow 0.2s;
@@ -373,21 +377,13 @@
       margin: 0 4px;
     }
 
-    .inline-text-input {
-      flex: 1;
-      min-width: 180px;
-      padding: 6px 10px !important;
-      margin-top: 4px;
-    }
-
     /* Submit Button */
     .submit-btn {
       width: 100%;
       padding: 14px 24px;
       background-color: var(--forest-green);
       color: #fff;
-      font-family: 'Mali', cursive, sans-serif;
-      font-size: 1.1rem;
+      font-size: 1.08rem;
       font-weight: 600;
       border: none;
       border-radius: 30px;
@@ -461,29 +457,24 @@
         
         <div class="couple-names">
           <div class="person-block">
-            <div class="person-name">Suphattra</div>
-            <div class="person-surname">Sae-wan</div>
-            <div class="person-nickname">(nay)</div>
+            <div class="person-name">Nay</div>
           </div>
 
           <div class="birds-icon">🕊️💚🕊️</div>
 
           <div class="person-block">
-            <div class="person-name">Nithit</div>
-            <div class="person-surname">Pumtien</div>
-            <div class="person-nickname">(earn)</div>
+            <div class="person-name">Earn</div>
           </div>
         </div>
 
         <p class="invite-line">Joyfully invite you to their wedding</p>
 
-        <!-- Added Date & Venue Information -->
+        <!-- Date & Venue Information -->
         <div class="event-info-card">
-          <div class="event-date">
-            <span>📅 วันที่ 23 มกราคม 2569 (23 January 2026)</span>
-          </div>
+          <div class="event-date-th">วันที่ 23 มกราคม 2569</div>
+          <div class="event-date-en">23 January 2026</div>
           <div class="event-venue">
-            <span>📍 สถานที่ : AUBE VENUE, RATCHAPRUEK, BKK</span>
+            <span>สถานที่ : AUBE VENUE, RATCHAPRUEK, BKK</span>
           </div>
           <a href="https://www.google.com/maps/search/?api=1&query=AUBE+VENUE+RATCHAPRUEK+BKK" target="_blank" rel="noopener noreferrer" class="map-link">
             🗺️ เปิดแผนที่ Google Maps
@@ -512,6 +503,7 @@
             <span class="dot" style="background-color: #ede6d6;" title="Cream"></span>
             <span class="dot" style="background-color: #8c6d53;" title="Earth Brown"></span>
           </div>
+          <div class="hashtag-box">#NAYEARN2eternity</div>
         </div>
       </div>
 
@@ -519,24 +511,24 @@
 
       <!-- RSVP Form -->
       <form id="rsvpForm">
-        <!-- 1. ข้อมูลพื้นฐานของผู้ร่วมงาน (Essential Info) -->
+        <!-- 1. ข้อมูลผู้ร่วมงาน -->
         <div class="form-section">
-          <div class="section-title">✨ 1. ข้อมูลพื้นฐานของผู้ร่วมงาน (Essential Info)</div>
+          <div class="section-title">✨ 1. ข้อมูลผู้ร่วมงาน</div>
           
           <div class="row-2col form-group">
             <div>
-              <label class="field-label" for="firstName">ชื่อ (First Name) <span class="required-star">*</span></label>
+              <label class="field-label" for="firstName">ชื่อ <span class="required-star">*</span></label>
               <input type="text" id="firstName" name="firstName" placeholder="กรอกชื่อจริง" required>
             </div>
             <div>
-              <label class="field-label" for="lastName">นามสกุล (Last Name) <span class="required-star">*</span></label>
+              <label class="field-label" for="lastName">นามสกุล <span class="required-star">*</span></label>
               <input type="text" id="lastName" name="lastName" placeholder="กรอกนามสกุล" required>
             </div>
           </div>
 
           <div class="form-group">
-            <label class="field-label" for="nickname">ชื่อเล่น / ฉายา (Nickname) <span class="required-star">*</span></label>
-            <input type="text" id="nickname" name="nickname" placeholder="เช่น เนย์, เอิร์น, พี่ก้องแก๊งมัธยม" required>
+            <label class="field-label" for="nickname">ชื่อเล่น <span class="required-star">*</span></label>
+            <input type="text" id="nickname" name="nickname" placeholder="กรอกชื่อเล่น" required>
           </div>
 
           <div class="form-group">
@@ -548,7 +540,7 @@
               </label>
               <label class="option-item">
                 <input type="radio" name="relationship" value="เพื่อนฝ่ายเจ้าบ่าว">
-                <span>เพื่อนฝ่ายเจ้าบ่าว </span>
+                <span>เพื่อนฝ่ายเจ้าบ่าว</span>
               </label>
               <label class="option-item">
                 <input type="radio" name="relationship" value="ญาติฝ่ายเจ้าสาว">
@@ -558,17 +550,13 @@
                 <input type="radio" name="relationship" value="ญาติฝ่ายเจ้าบ่าว">
                 <span>ญาติฝ่ายเจ้าบ่าว</span>
               </label>
-              <label class="option-item">
-                <input type="radio" name="relationship" value="แขกผู้ใหญ่ / แขกของคุณพ่อคุณแม่">
-                <span>แขกผู้ใหญ่ / แขกของคุณพ่อคุณแม่</span>
-              </label>
             </div>
           </div>
         </div>
 
-        <!-- 2. สถานะการเข้าร่วมงาน (Attendance Status) -->
+        <!-- 2. ตอบรับเข้าร่วมงาน -->
         <div class="form-section">
-          <div class="section-title">💌 2. สถานะการเข้าร่วมงาน (Attendance Status)</div>
+          <div class="section-title">💌 2. ตอบรับเข้าร่วมงาน</div>
           <div class="form-group">
             <label class="field-label">การเข้าร่วมงาน <span class="required-star">*</span></label>
             <div class="options-list">
@@ -584,12 +572,13 @@
           </div>
         </div>
 
-        <!-- 3. จำนวนผู้ติดตาม และความต้องการพิเศษ (Guests & Preferences) -->
+        <!-- 3. จำนวนผู้ติดตาม -->
         <div class="form-section" id="guestDetailsSection">
-          <div class="section-title">🥂 3. จำนวนผู้ติดตาม และความต้องการพิเศษ</div>
+          <div class="section-title">🥂 3. จำนวนผู้ติดตาม</div>
+          <div class="section-note">หมายเหตุ : จำนวนที่นั่งจะสำรองไว้ตามรายชื่อที่ตอบรับมา</div>
           
           <div class="form-group">
-            <label class="field-label">จำนวนผู้ติดตาม (Plus One / Family)</label>
+            <label class="field-label">จำนวนผู้ติดตาม</label>
             <div class="options-list">
               <label class="option-item">
                 <input type="radio" name="guestType" value="มาคนเดียว" id="guestAlone" checked>
@@ -610,29 +599,6 @@
           </div>
 
           <div class="form-group">
-            <label class="field-label">ข้อจำกัดเรื่องอาหาร / อาหารที่แพ้ (เลือกได้มากกว่า 1 ข้อ)</label>
-            <div class="options-list">
-              <label class="option-item">
-                <input type="checkbox" name="dietary" value="อาหารทั่วไป (รับได้หมด)" checked>
-                <span>อาหารทั่วไป (รับได้หมด)</span>
-              </label>
-              <label class="option-item">
-                <input type="checkbox" name="dietary" value="อาหารมังสวิรัติ / เจ">
-                <span>อาหารมังสวิรัติ / เจ</span>
-              </label>
-              <label class="option-item">
-                <input type="checkbox" name="dietary" value="อาหารฮาลาล (Halal)">
-                <span>อาหารฮาลาล (Halal)</span>
-              </label>
-              <label class="option-item">
-                <input type="checkbox" name="dietary" value="แพ้อาหาร" id="allergyCheck">
-                <span>แพ้อาหาร (โปรดระบุ):</span>
-                <input type="text" id="allergyDetail" name="allergyDetail" class="inline-text-input" placeholder="เช่น แพ้กุ้ง, แพ้ถั่ว, แพ้นมวัว" disabled>
-              </label>
-            </div>
-          </div>
-
-          <div class="form-group">
             <label class="field-label">เด็กเล็ก / ผู้สูงอายุ</label>
             <div class="options-list">
               <label class="option-item">
@@ -649,13 +615,13 @@
           </div>
         </div>
 
-        <!-- 4. อวยพรบ่าวสาว (Wishes) -->
+        <!-- 4. อวยพรบ่าวสาว -->
         <div class="form-section">
-          <div class="section-title">💐 4. อวยพรบ่าวสาว (Wishes)</div>
+          <div class="section-title">💐 4. อวยพรบ่าวสาว</div>
 
           <div class="form-group">
             <label class="field-label" for="wishes">ข้อความอวยพรคู่บ่าวสาว 💖</label>
-            <textarea id="wishes" name="wishes" rows="4" placeholder="เขียนคำอวยพรให้กับ เนย์ & เอิร์น เพื่อเก็บเป็นความทรงจำดีๆ..."></textarea>
+            <textarea id="wishes" name="wishes" rows="4" placeholder="เขียนคำอวยพรให้กับ Nay & Earn เพื่อเก็บเป็นความทรงจำดีๆ..."></textarea>
           </div>
         </div>
 
@@ -669,7 +635,7 @@
     // =========================================================================
     // นำ Web App URL ที่ได้จากการ Deploy Google Apps Script มาวางในเครื่องหมายคำพูดด้านล่าง
     // =========================================================================
-    const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwBBAtFnvE6Fk9vyp1nXpnK2RUSSKfXOZ3k0KjLc5JXgzlKmfurQit9tHsqs3ZKpgNZ/exec";
+    const GOOGLE_SCRIPT_URL = "YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE";
 
     // การเปิด-ปิดส่วนจำนวนผู้ติดตามตามสถานะการมาร่วมงาน
     const attendYes = document.getElementById('attendYes');
@@ -704,14 +670,6 @@
     guestAlone.addEventListener('change', toggleGuestInputs);
     guestWithOthers.addEventListener('change', toggleGuestInputs);
 
-    // การเปิด-ปิดช่องระบุอาหารที่แพ้
-    const allergyCheck = document.getElementById('allergyCheck');
-    const allergyDetail = document.getElementById('allergyDetail');
-    allergyCheck.addEventListener('change', () => {
-      allergyDetail.disabled = !allergyCheck.checked;
-      if (allergyCheck.checked) allergyDetail.focus();
-    });
-
     // การเปิด-ปิดช่องระบุจำนวนเก้าอี้เด็ก High Chair
     const highChairCheck = document.getElementById('highChairCheck');
     const highChairCount = document.getElementById('highChairCount');
@@ -727,18 +685,8 @@
     rsvpForm.addEventListener('submit', async (e) => {
       e.preventDefault();
 
-      // รวบรวมข้อมูลจากฟอร์ม
       const isAttending = attendYes.checked;
       const isWithGuests = guestWithOthers.checked;
-
-      // รวบรวมข้อมูลอาหาร
-      const dietaryChecked = Array.from(document.querySelectorAll('input[name="dietary"]:checked'))
-        .map(cb => {
-          if (cb.value === 'แพ้อาหาร') {
-            return `แพ้อาหาร (${allergyDetail.value || 'ไม่ระบุรายละเอียด'})`;
-          }
-          return cb.value;
-        });
 
       // รวบรวมข้อมูลเด็กเล็ก / ผู้สูงอายุ
       const specialNeedsList = [];
@@ -759,7 +707,6 @@
         guestType: isAttending ? (isWithGuests ? 'มาพร้อมผู้ติดตาม' : 'มาคนเดียว') : '-',
         guestCount: (isAttending && isWithGuests) ? guestCount.value : (isAttending ? '0' : '-'),
         companionNames: (isAttending && isWithGuests) ? document.getElementById('companionNames').value.trim() : '-',
-        dietary: isAttending ? (dietaryChecked.join(', ') || '-') : '-',
         specialNeeds: isAttending ? (specialNeedsList.join(', ') || 'ไม่มี') : '-',
         wishes: document.getElementById('wishes').value.trim() || '-'
       };
@@ -769,8 +716,7 @@
       statusMessage.style.display = 'none';
 
       try {
-        if (GOOGLE_SCRIPT_URL === "YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE") {
-          // โหมดจำลองการทำงานกรณีไม่ได้ใส่ URL ของ Apps Script
+        if (GOOGLE_SCRIPT_URL === "https://script.google.com/macros/s/AKfycbxUUPsq4qmljBZdTd1YnnzXOC1fPiBXOg21swN7_rkwPu-_g4sKcpvhbxDZwte-SZ8r/exec") {
           await new Promise(resolve => setTimeout(resolve, 900));
           console.log("ข้อมูลที่เตรียมส่งเข้า Google Sheet:", payload);
         } else {
